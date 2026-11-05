@@ -1,0 +1,8 @@
+## Interface: 16001
+## Title: Totem Bar Binds
+## Notes: Keybinds for the shaman totem bar, with a small settings window and minimap button.
+## Author: a3jk
+## Version: @project-version@
+## SavedVariables: TotemBarBindsDB
+
+TotemBarBinds.lua
