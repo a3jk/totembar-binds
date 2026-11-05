@@ -4,5 +4,6 @@
 ## Author: a3jk
 ## Version: @project-version@
 ## SavedVariables: TotemBarBindsDB
+## X-Curse-Project-ID: 1784880
 
 TotemBarBinds.lua

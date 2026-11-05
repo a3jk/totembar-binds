@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#33264a"/>
+      <stop offset="1" stop-color="#0c0912"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffd27a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffd27a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wood" x1="0" x2="1">
+      <stop offset="0" stop-color="#5a3a22"/>
+      <stop offset="0.5" stop-color="#8a5a34"/>
+      <stop offset="1" stop-color="#4a2f1b"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f1ea"/>
+      <stop offset="1" stop-color="#cfc9bd"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="165" rx="150" ry="140" fill="url(#glow)"/>
+
+  <!-- totem pole: four carved blocks, one per element -->
+  <g id="pole">
+    <!-- air (top) with wings -->
+    <path d="M140 62 L72 40 L92 70 L60 72 L140 92 Z" fill="#8a5a34" stroke="#2a1a0e" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M260 62 L328 40 L308 70 L340 72 L260 92 Z" fill="#8a5a34" stroke="#2a1a0e" stroke-width="3" stroke-linejoin="round"/>
+
+    <rect x="140" y="40"  width="120" height="56" rx="10" fill="url(#wood)" stroke="#2a1a0e" stroke-width="3"/>
+    <rect x="140" y="96"  width="120" height="56" rx="10" fill="url(#wood)" stroke="#2a1a0e" stroke-width="3"/>
+    <rect x="140" y="152" width="120" height="56" rx="10" fill="url(#wood)" stroke="#2a1a0e" stroke-width="3"/>
+    <rect x="140" y="208" width="120" height="56" rx="10" fill="url(#wood)" stroke="#2a1a0e" stroke-width="3"/>
+    <rect x="182" y="264" width="36"  height="22" fill="#4a2f1b" stroke="#2a1a0e" stroke-width="3"/>
+
+    <!-- faces: glowing eyes + carved mouth in element colours -->
+    <g stroke="#2a1a0e" stroke-width="2.5">
+      <!-- air -->
+      <g fill="#bfe6ff">
+        <ellipse cx="178" cy="62" rx="12" ry="7" filter="url(#soft)" opacity="0.9"/>
+        <ellipse cx="222" cy="62" rx="12" ry="7" filter="url(#soft)" opacity="0.9"/>
+        <ellipse cx="178" cy="62" rx="10" ry="6"/>
+        <ellipse cx="222" cy="62" rx="10" ry="6"/>
+        <rect x="180" y="77" width="40" height="8" rx="3"/>
+      </g>
+      <!-- fire -->
+      <g fill="#ff6a2b">
+        <path d="M166 124 L190 116 L190 128 Z" filter="url(#soft)" opacity="0.9"/>
+        <path d="M234 124 L210 116 L210 128 Z" filter="url(#soft)" opacity="0.9"/>
+        <path d="M166 124 L190 116 L190 128 Z"/>
+        <path d="M234 124 L210 116 L210 128 Z"/>
+        <path d="M176 136 L224 136 L216 146 L184 146 Z"/>
+      </g>
+      <!-- water -->
+      <g fill="#3aa6ff">
+        <circle cx="178" cy="176" r="10" filter="url(#soft)" opacity="0.9"/>
+        <circle cx="222" cy="176" r="10" filter="url(#soft)" opacity="0.9"/>
+        <circle cx="178" cy="176" r="8"/>
+        <circle cx="222" cy="176" r="8"/>
+        <path d="M180 193 Q200 204 220 193 Q200 198 180 193 Z"/>
+      </g>
+      <!-- earth -->
+      <g fill="#86c94e">
+        <rect x="167" y="225" width="22" height="10" rx="2" filter="url(#soft)" opacity="0.9"/>
+        <rect x="211" y="225" width="22" height="10" rx="2" filter="url(#soft)" opacity="0.9"/>
+        <rect x="167" y="225" width="22" height="10" rx="2"/>
+        <rect x="211" y="225" width="22" height="10" rx="2"/>
+        <rect x="178" y="244" width="44" height="10" rx="2"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- keycaps 1-4, colour-matched to the elements -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="34" text-anchor="middle">
+    <g transform="translate(39 304)">
+      <rect y="6" width="70" height="66" rx="12" fill="#6f6a60"/>
+      <rect width="70" height="62" rx="12" fill="url(#cap)"/>
+      <rect x="12" y="50" width="46" height="5" rx="2.5" fill="#bfe6ff"/>
+      <text x="35" y="42" fill="#2a2620">1</text>
+    </g>
+    <g transform="translate(123 304)">
+      <rect y="6" width="70" height="66" rx="12" fill="#6f6a60"/>
+      <rect width="70" height="62" rx="12" fill="url(#cap)"/>
+      <rect x="12" y="50" width="46" height="5" rx="2.5" fill="#ff6a2b"/>
+      <text x="35" y="42" fill="#2a2620">2</text>
+    </g>
+    <g transform="translate(207 304)">
+      <rect y="6" width="70" height="66" rx="12" fill="#6f6a60"/>
+      <rect width="70" height="62" rx="12" fill="url(#cap)"/>
+      <rect x="12" y="50" width="46" height="5" rx="2.5" fill="#3aa6ff"/>
+      <text x="35" y="42" fill="#2a2620">3</text>
+    </g>
+    <g transform="translate(291 304)">
+      <rect y="6" width="70" height="66" rx="12" fill="#6f6a60"/>
+      <rect width="70" height="62" rx="12" fill="url(#cap)"/>
+      <rect x="12" y="50" width="46" height="5" rx="2.5" fill="#86c94e"/>
+      <text x="35" y="42" fill="#2a2620">4</text>
+    </g>
+  </g>
+</svg>

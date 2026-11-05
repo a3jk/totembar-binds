@@ -1,8 +1,14 @@
 package-as: TotemBarBinds
 
+# The addon source lives in the TotemBarBinds/ subfolder; lift it to the
+# root of the package so the zip contains TotemBarBinds/TotemBarBinds.toc.
+move-folders:
+  TotemBarBinds/TotemBarBinds: TotemBarBinds
+
 manual-changelog:
   filename: CHANGELOG.md
   markup-type: markdown
 
 ignore:
   - README.md
+  - media
