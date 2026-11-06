@@ -1,10 +1,14 @@
 # Changelog
 
-## Unreleased
+## v1.1.1
+
+- Changelog corrections. 
+
+## v1.1
 
 - The addon now only loads on shaman characters; other classes get no minimap button, settings window or `/tbb` command.
 
-## 1.0.0
+## v1.0
 
 - Initial release.
 - Keybinds for Call of Totems, the four totem slots and Totemic Recall.
