@@ -6,6 +6,11 @@
 
 local ADDON_NAME = ...
 
+-- Shamans only: on any other class, create nothing (no minimap button,
+-- settings window, slash command or bindings). Saved binds are left untouched.
+local _, playerClass = UnitClass("player")
+if playerClass ~= "SHAMAN" then return end
+
 local issecretvalue = issecretvalue or function() return false end
 local NUM_SLOTS = 4
 
